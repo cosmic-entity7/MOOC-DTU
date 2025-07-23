@@ -99,11 +99,26 @@ tbody tr:nth-child(even) { background-color: #242424; }
 tbody tr:hover { background-color: #2c2c2c; }
 td { padding: 12px 15px; white-space: nowrap; }
 
+/* 
+.disclaimer.mobile-view {
+    font-size: 11px; 
+    padding: 10px;
+} */
+
+/* ... other styles ... */
 
 .disclaimer.mobile-view {
     font-size: 11px; 
     padding: 10px;
+    max-width: 100%;       /* ADD THIS LINE */
+    box-sizing: border-box; /* ADD THIS LINE */
 }
+
+.disclaimer.mobile-view .author {
+    font-size: 10px;
+}
+
+/* ... rest of the file ... */
 
 .disclaimer.mobile-view .author {
     font-size: 10px;
