@@ -99,38 +99,13 @@ tbody tr:nth-child(even) { background-color: #242424; }
 tbody tr:hover { background-color: #2c2c2c; }
 td { padding: 12px 15px; white-space: nowrap; }
 
-/* 
+
 .disclaimer.mobile-view {
     font-size: 11px; 
     padding: 10px;
-} */
-
-/* ... other styles ... */
-
-/* ... other styles ... */
-
-/* REPLACE the old .disclaimer.mobile-view rule with THIS one */
-.disclaimer.mobile-view {
-    font-size: 11px;
-    padding: 10px 15px; /* Add some side padding */
-    box-sizing: border-box;
-
-    /* --- THIS IS THE TRICK --- */
-    width: 100vw; /* Use 100% of the VISIBLE screen width */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 0;
-    margin-right: 0;
 }
 
-.disclaimer.mobile-view .author {
-    font-size: 10px;
-}
 
-/* ... rest of the file ... */
-
-/* ... rest of the file ... */
 
 .disclaimer.mobile-view .author {
     font-size: 10px;
