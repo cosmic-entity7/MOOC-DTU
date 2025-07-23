@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1000">
+    <title>MOOC Performance Report DTU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MOOC Performance Report</h1>
+        
+        <div class="disclaimer">
+            <p class="tip"><strong>Quick Tip:</strong> For the ODD semester, "Wildlife Ecology" appears to be a high-scoring course based on this data.</p>
+            <p><strong>Click any column header to sort the table.</strong> This data is compiled from MOOC results submitted by final and pre-final year students at DTU. Because students enter course names manually, some inconsistencies may remain despite cleaning (e.g., you might see a course listed twice with slightly different names).</p>
+            <p class="caution"><strong>CAUTION:</strong> These statistics represent only the DTU students who submitted their results and are not representative of all NPTEL participants. For comprehensive, official statistics on any course, please visit nptel.ac.in </p>
+            <p>The original data file will not be shared to protect student privacy. (Just a quick 2-hour build, not exactly professional, but it works, kind of 😅)</p>
+            <p class="author">~ Maintained for the common good by Cosmic Entity XD </p>
+        </div>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search for a course name...">
+            <div class="table-switcher">
+                <button id="btn2024" class="active">2024 ODD</button>
+                <button id="btn2025">2025 EVEN</button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th data-column="course" data-type="string">Course Name</th>
+                    <th data-column="count" data-type="number">Student Count</th>
+                    <th data-column="mean" data-type="number">Mean (Average)</th>
+                    <th data-column="median" data-type="number">Median</th>
+                    <th data-column="mode" data-type="string">Mode</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
