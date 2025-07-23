@@ -108,3 +108,10 @@ td { padding: 12px 15px; white-space: nowrap; }
 .disclaimer.mobile-view .author {
     font-size: 10px;
 }
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+    border-radius: 8px; 
+}
