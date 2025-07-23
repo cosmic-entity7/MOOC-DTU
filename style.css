@@ -21,7 +21,7 @@ h1 {
 
 main {
     padding: 20px;
-    overflow-x: auto; /* This allows scrolling only when needed */
+    overflow-x: hidden; /* This allows scrolling only when needed */
 }
 
 
