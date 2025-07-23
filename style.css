@@ -8,7 +8,6 @@ body {
 }
 
 header {
-    /* CHANGED: Removed left/right padding from the header itself */
     padding: 20px 0;
     text-align: center;
     background-color: #1e1e1e;
@@ -25,8 +24,7 @@ main {
     overflow-x: hidden;
 }
 
-/* --- Centering Container for Header Elements (NEW) --- */
-/* This rule now centers everything in the header for desktop view */
+/* --- Centering Container for Header Elements --- */
 .disclaimer, .controls {
     max-width: 800px;
     margin-left: auto;
@@ -83,13 +81,13 @@ td { padding: 12px 15px; white-space: nowrap; }
 /* --- Final Mobile Adjustments --- */
 .disclaimer.mobile-view {
     font-size: 11px;
-    /* This makes the note go nearly edge-to-edge on mobile */
-    max-width: none; /* Removes the 800px limit */
-    padding-left: 15px; /* Sets a small, clean margin for mobile */
+    max-width: none;
+    padding-left: 15px;
     padding-right: 15px;
-    border-radius: 0; /* Optional: Makes it look more integrated */
+    border-radius: 0;
     border-left: none;
     border-right: none;
+    background-color: red !important; /* TEMPORARY DEBUGGING LINE */
 }
 
 .disclaimer.mobile-view .author {
